@@ -8,7 +8,7 @@ const app = express();
 // Middleware
 app.use(
     cors({
-      origin: ['https://taskflow-frontend-qhu7.onrender.com', 'http://localhost:3000'],
+      origin: ['https://taskflow-app-frontend.onrender.com', 'http://localhost:3000'],
       methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
       credentials: true, // Allow cookies if needed
     })
