@@ -20,7 +20,7 @@ app.use(express.json()); // For parsing JSON requests
 app.use('/api', taskRoutes); // Prefix the routes with '/api'
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, {})
 .then(() => console.log('Connected to MongoDB successfully'))
 .catch((err) => console.error('Failed to connect to MongoDB:', err));
 
