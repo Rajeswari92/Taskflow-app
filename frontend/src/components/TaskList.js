@@ -30,7 +30,7 @@ const TaskList = () => {
         setTasks(response.data);
       })
       .catch((err) => console.error('Error fetching tasks:', err));
-  }, []);
+  }, [apiUrl]);
 
   // Add a new task
   const addTask = () => {
